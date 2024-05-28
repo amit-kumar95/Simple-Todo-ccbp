@@ -64,22 +64,28 @@ class SimpleTodos extends Component {
       <div className="container">
         <div className="inner-container">
           <h1 className="heading">Simple Todos</h1>
-          <div className="add-todo">
+          <div className="input-container">
             <input
               type="text"
               name="newTodoTitle"
               value={newTodoTitle}
+              className="input-field"
               onChange={this.handleChange}
               placeholder="Enter todo title"
             />
             <input
               type="number"
               name="newTodoCount"
+              className="new-input-count"
               value={newTodoCount}
               onChange={this.handleChange}
               placeholder="Enter number of todos"
             />
-            <button onClick={this.handleAddTodo} type="button">
+            <button
+              onClick={this.handleAddTodo}
+              type="button"
+              className="add-button-styling"
+            >
               Add
             </button>
           </div>

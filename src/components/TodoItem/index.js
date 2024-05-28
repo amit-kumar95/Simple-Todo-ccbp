@@ -13,10 +13,7 @@ class TodoItem extends Component {
   }
 
   handleSave = () => {
-    // const {todoDetails} = this.props
-    // const {updatedTitle} = this.state
     this.setState({editing: false})
-    // Call a function to save updated title (not implemented in this code)
   }
 
   handleChange = e => {
@@ -36,25 +33,43 @@ class TodoItem extends Component {
               type="text"
               value={updatedTitle}
               onChange={this.handleChange}
+              className="input-field-saveText"
             />
-            <button onClick={this.handleSave} type="button">
+            <button
+              onClick={this.handleSave}
+              className="saveButton"
+              type="button"
+            >
               Save
             </button>
           </>
         ) : (
           <>
-            <input
-              type="checkbox"
-              checked={todoDetails.completed}
-              onChange={() => toggleComplete(todoDetails.id)}
-            />
-            <p className="title">{todoDetails.title}</p>
-            <button onClick={this.handleEdit} type="button">
-              Edit
-            </button>
-            <button onClick={() => deleteTodo(todoDetails.id)} type="button">
-              Delete
-            </button>
+            <div className="checkBox-Title-Cont">
+              <input
+                type="checkbox"
+                className="checkBox-Stl"
+                checked={todoDetails.completed}
+                onChange={() => toggleComplete(todoDetails.id)}
+              />
+              <p className="title">{todoDetails.title}</p>
+            </div>
+            <div className="button-container">
+              <button
+                className="editButton"
+                onClick={this.handleEdit}
+                type="button"
+              >
+                Edit
+              </button>
+              <button
+                className="deleteButton"
+                onClick={() => deleteTodo(todoDetails.id)}
+                type="button"
+              >
+                Delete
+              </button>
+            </div>
           </>
         )}
       </li>

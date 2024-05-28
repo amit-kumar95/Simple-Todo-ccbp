@@ -4,30 +4,100 @@
   display: flex;
   justify-content: space-between;
   padding-right: 30px;
-  background-color: antiquewhite;
+  background-color: #c9edff;
   margin: 10px;
   border-radius: 10px;
+  border-left: 5px solid #e31084;
+  width: 100%;
 }
 
-.delete-btn {
-  background-color: white;
-  color: #ff0b37;
-  border: 2px solid #ff0b37;
-  padding: 10px 15px;
-  margin-bottom: 5px;
-}
 .title {
   color: #000000;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Roboto';
+  margin-left: 10px;
 }
+
 @media screen and (min-width: 768px) {
   .title {
-    font-size: 24px;
+    font-size: 22px;
+    margin-left: 10px;
   }
   .delete-btn {
     font-size: 18px;
     padding: 8px 16px 8px 16px;
     margin-left: 32px;
   }
+}
+
+.checkBox-Title-Cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkBox-Stl {
+  width: 18px;
+  height: 18px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.input-field-saveText {
+  width: 370px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 24%;
+}
+
+.saveButton {
+  width: 80px;
+  height: 35px;
+  color: #2eb833;
+  font-size: 17px;
+  font-weight: 600;
+  border: 2px solid #2eb833;
+  border-radius: 8px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.editButton {
+  width: 80px;
+  height: 35px;
+  color: #b35e0e;
+  font-size: 17px;
+  font-weight: 600;
+  border: 2px solid #b35e0e;
+  border-radius: 8px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.deleteButton {
+  width: 80px;
+  height: 35px;
+  color: #ff0b37;
+  font-size: 17px;
+  font-weight: 600;
+  border: 2px solid #ff0b37;
+  border-radius: 8px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }

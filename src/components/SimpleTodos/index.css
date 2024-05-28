@@ -40,4 +40,51 @@
 }
 .todos-list {
   padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  width: 48%;
+}
+
+.input-field {
+  width: 370px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 5px 1px grey;
+}
+
+.new-input-count {
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 5px 1px grey;
+}
+
+.add-button-styling {
+  height: 40px;
+  width: 95px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 1px 2px 5px 1px grey;
+  background-color: #095db8;
+  color: #ffffff;
+  font-weight: bold;
 }
