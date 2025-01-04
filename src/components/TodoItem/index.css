@@ -1,103 +1,45 @@
 .todo-item {
-  list-style-type: none;
-  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-right: 30px;
-  background-color: #c9edff;
-  margin: 10px;
-  border-radius: 10px;
-  border-left: 5px solid #e31084;
-  width: 100%;
+  align-items: center;
+  list-style-type: none;
 }
 
 .title {
   color: #000000;
-  font-size: 15px;
   font-family: 'Roboto';
-  margin-left: 10px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .title {
-    font-size: 22px;
-    margin-left: 10px;
+    font-size: 24px;
   }
+}
+
+.delete-btn {
+  background-color: #ffffff;
+  color: #ff0b37;
+  font-family: 'Roboto';
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #ff0b37;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  margin-left: 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
   .delete-btn {
     font-size: 18px;
-    padding: 8px 16px 8px 16px;
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    padding-right: 16px;
     margin-left: 32px;
   }
-}
-
-.checkBox-Title-Cont {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.checkBox-Stl {
-  width: 18px;
-  height: 18px;
-  margin-left: 25px;
-  cursor: pointer;
-}
-
-.input-field-saveText {
-  width: 370px;
-  height: 40px;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background-color: transparent;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 24%;
-}
-
-.saveButton {
-  width: 80px;
-  height: 35px;
-  color: #2eb833;
-  font-size: 17px;
-  font-weight: 600;
-  border: 2px solid #2eb833;
-  border-radius: 8px;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-}
-
-.editButton {
-  width: 80px;
-  height: 35px;
-  color: #b35e0e;
-  font-size: 17px;
-  font-weight: 600;
-  border: 2px solid #b35e0e;
-  border-radius: 8px;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-}
-
-.deleteButton {
-  width: 80px;
-  height: 35px;
-  color: #ff0b37;
-  font-size: 17px;
-  font-weight: 600;
-  border: 2px solid #ff0b37;
-  border-radius: 8px;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
 }
